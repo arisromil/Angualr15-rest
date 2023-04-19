@@ -17,8 +17,7 @@ import { InMemoryDataService } from './services/in-memory-data.service';
     AppComponent,
     NavbarComponent,
     AboutComponent,
-    ContactComponent,
-    HomeComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -30,5 +29,13 @@ import { InMemoryDataService } from './services/in-memory-data.service';
   ],
   providers: [],
   bootstrap: [AppComponent]
+
+  // bootstrapApplication(AppComponent, {
+  //   providers:[
+  //     importProvidersFrom(HttpClientModule),
+  //     importProvidersFrom(RouterModule.forRoot(APP_ROUTES))
+  //   ]
+  // });
+
 })
 export class AppModule { }
